@@ -1,0 +1,31 @@
+@startuml
+class Book{
+    -bookId:Interger
+    - bookISBN:String
+    -bookName:String 
+    -total:Interger 
+    -stock:Interger 
+    -publisher:String 
+    -author:String 
+    -summary:String
+    ..getter..
+    +getBookId()
+    +getBookISBN()
+    +getBookName()
+    +getTotal()
+    +getStock()
+    +getPublisher()
+    +getAuthor()
+    +getSummary()
+    ..setter..
+    +setBookId()
+    +setBookISBN()
+    +setBookName()
+    +setTotal()
+    +setStock()
+    +setPublisher()
+    +setAuthor()
+    +setSummary() 
+}
+
+@enduml

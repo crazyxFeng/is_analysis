@@ -1,0 +1,21 @@
+@startuml
+class MangeInfo{
+    -mangerId:Interger
+    -mangerName:String
+    -mangerNumber:String
+    -mangerAddress:String
+    -mangerPhone:String
+    ..getter..
+    +getMangerId()
+    +getMangerName()
+    +getMangerNumber()
+    +getMangerAddress()
+    +getMangerPhone()
+    ..setter..
+    +setMangerId()
+    +setMangerName()
+    +setMangerNumber()
+    +setMangerAddress()
+    +setMangerPhone()
+}
+@enduml

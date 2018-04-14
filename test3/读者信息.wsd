@@ -1,0 +1,21 @@
+@startuml
+class ReaderInfo{
+    -readerId:Interger 
+    -readerName:String 
+    -bookISBN:String 
+    -lendBookTime:String 
+    -returnBookTime:String
+    ..getter..
+    +getReaderId()
+    +getReaderName()
+    +getBookISBN()
+    +getLendBookTime()
+    +getReturnBookTime()
+    ..setter..
+    +setReaderId()
+    +setReaderName()
+    +setBookISBN()
+    +setLendBookTime()
+    +setReturnBookTime() 
+}
+@enduml

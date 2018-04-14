@@ -1,0 +1,82 @@
+@startuml
+class 管理员信息{
+    -mangerId:Interger
+    -mangerName:String
+    -mangerNumber:String
+    -mangerAddress:String
+    -mangerPhone:String
+}
+class 读者信息{
+    -readerId:Interger 
+    -readerName:String 
+    -bookISBN:String 
+    -lendBookTime:String 
+    -returnBookTime:String
+}
+class 图书信息{
+    -bookId:Interger
+    - bookISBN:String
+    -bookName:String 
+    -total:Interger 
+    -stock:Interger 
+    -publisher:String 
+    -author:String 
+    -summary:String
+}
+class 读者{
+    --个人基本信息--
+    名字
+    年龄
+    电话
+    地址
+    等等....
+}
+class 注册用户{
+    名字
+    身份证号
+    电话号码
+    微信
+    QQ
+    等等...
+}
+class 会员{
+    名字
+    延长的借阅时间
+    会员剩余时间
+    等等....
+}
+class 预定的记录{
+    预定的时间
+}
+class 借书记录{
+    借书时间
+    还书时间
+}
+class 逾期记录{
+    逾期天数
+    可以逾期的天数
+    还书时间
+}
+class 超级管理员{
+    普通管理员的相关信息
+}
+note "省略了getter和setter的方法，可在其他代码中看到" as N
+读者信息 "多" --* "1" 预定的记录  :借阅
+读者信息 --> 借书记录:添加
+借书记录 --> 管理员信息:增加借阅信息
+借书记录 --> 逾期记录
+逾期记录 --> 管理员信息:处理
+预定的记录 --> 管理员信息 :增加预定记录
+管理员信息 "1" --* "多" 图书信息 :mange
+管理员信息 "1" --* "多" 读者信息  :mange
+超级管理员 "1" -- "多"管理员信息:contains
+读者信息    <|--    读者
+读者信息    <|--    注册用户
+读者信息    <|--    会员
+
+
+N .. 管理员信息
+N .. 读者信息
+N .. 图书信息
+
+@enduml

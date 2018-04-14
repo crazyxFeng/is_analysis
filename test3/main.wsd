@@ -1,0 +1,75 @@
+@startuml
+class   ReaderInfo
+note left:读者信息
+class   MangeInfo
+note left:管理员信息
+class   Book
+note left:图书信息
+
+class ReaderInfo{
+    -readerId:Interger 
+    -readerName:String 
+    -bookISBN:String 
+    -lendBookTime:String 
+    -returnBookTime:String
+    ..getter..
+    +getReaderId()
+    +getReaderName()
+    +getBookISBN()
+    +getLendBookTime()
+    +getReturnBookTime()
+    ..setter..
+    +setReaderId()
+    +setReaderName()
+    +setBookISBN()
+    +setLendBookTime()
+    +setReturnBookTime() 
+}
+class MangeInfo{
+    -mangerId:Interger
+    -mangerName:String
+    -mangerNumber:String
+    -mangerAddress:String
+    -mangerPhone:String
+    ..getter..
+    +getMangerId()
+    +getMangerName()
+    +getMangerNumber()
+    +getMangerAddress()
+    +getMangerPhone()
+    ..setter..
+    +setMangerId()
+    +setMangerName()
+    +setMangerNumber()
+    +setMangerAddress()
+    +setMangerPhone()
+}
+class Book{
+    -bookId:Interger
+    - bookISBN:String
+    -bookName:String 
+    -total:Interger 
+    -stock:Interger 
+    -publisher:String 
+    -author:String 
+    -summary:String
+    ..getter..
+    +getBookId()
+    +getBookISBN()
+    +getBookName()
+    +getTotal()
+    +getStock()
+    +getPublisher()
+    +getAuthor()
+    +getSummary()
+    ..setter..
+    +setBookId()
+    +setBookISBN()
+    +setBookName()
+    +setTotal()
+    +setStock()
+    +setPublisher()
+    +setAuthor()
+    +setSummary() 
+}
+@enduml
