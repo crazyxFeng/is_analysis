@@ -1,0 +1,36 @@
+@startuml
+hide footbox
+title __查询图书__用例
+autonumber
+actor 读者 as reader
+control 查询 as search
+entity 查询方式 as searchway
+control 书名查询 as bookname
+control ISBN查询 as isbn
+database 数据库 as db
+participant 查询结果 as results
+activate reader
+reader -> search:查询图书信息
+activate search
+search -> searchway:输入查询方式
+activate db
+activate searchway
+activate isbn
+searchway-> isbn:根据ISBN来查询
+activate bookname
+
+searchway-> bookname:根据书名来查询
+isbn -> db:查询
+deactivate isbn
+
+bookname -> db:查询
+deactivate bookname
+
+db->results:得到结果
+note right:将结果返回给读者
+activate results
+deactivate db
+deactivate search
+results -> reader:返回结果
+deactivate results
+@enduml

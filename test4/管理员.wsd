@@ -1,0 +1,21 @@
+@startuml
+hide footbox
+autonumber
+actor __管理员__ as manager
+actor __读者__ as reader
+participant __读者信息__ as readerInfo
+
+activate manager
+manager -> reader : 管理
+activate reader
+reader -> readerInfo :提供个人信息
+deactivate reader
+
+activate readerInfo
+
+readerInfo --> manager :存储信息并进行管理
+
+manager -> readerInfo:获取借阅情况
+manager <- readerInfo:借书、还书信息
+note right:返回消息
+@enduml

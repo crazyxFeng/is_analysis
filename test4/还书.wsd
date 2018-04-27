@@ -1,0 +1,36 @@
+@startuml
+
+
+hide footbox
+autonumber
+title __归还图书__ 用例
+actor 普通管理员 as manager
+boundary 账号判断 as account
+control 业务判断  as business
+database 数据库 as db
+
+
+
+
+activate account
+	manager -> account :  输入读者账号信息
+	activate business
+		account -> business : 获取账号信息
+deactivate account
+		activate db
+			business -> db : 比对账号密码合法性
+			db --> business : 账号合法
+
+
+			manager -> business : 输入归还图书信息
+			business -> db : 删除借阅信息
+			business -> db : 修改图书库存
+			db -> business : 返回操作结果
+		deactivate db
+	business -> manager : 返回归还结果
+	deactivate db
+	
+
+
+
+@enduml

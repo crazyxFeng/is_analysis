@@ -1,0 +1,29 @@
+@startuml
+hide footbox
+title __借阅图书__
+autonumber
+actor __读者__ as reader
+participant 借书方式 as chioce
+participant 网上借阅 as inter
+participant 图书馆借阅 as lib
+participant 借书记录 as bookrecord
+activate reader
+reader ->chioce :选择借书方式
+
+activate chioce
+chioce -> inter:网上借阅？
+activate inter
+inter -> bookrecord :添加借阅记录
+deactivate inter
+activate bookrecord
+
+chioce -> lib:图书馆借阅？
+deactivate chioce
+activate lib
+lib -> bookrecord :添加借阅记录
+deactivate lib
+
+
+bookrecord -> reader :到管理员处登记信息
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+box "__超级管理员__用例"
+hide footbox
+autonumber
+actor __超级管理员__ as superManager
+actor __普通管理员__ as manager
+participant __普通管理员信息__ as info
+
+activate superManager
+superManager -> manager : 管理
+activate manager
+manager -> info :提供个人信息
+deactivate manager
+
+activate info
+
+info --> superManager :存储信息并进行管理
+end box
+@enduml
