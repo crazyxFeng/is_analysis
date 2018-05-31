@@ -1,0 +1,47 @@
+@startuml
+title 基于GitHub的实验管理平台--用例图
+skinparam usecase {
+	BackgroundColor YellowGreen
+	BorderColor DarkSlateGray
+
+	BackgroundColor<< Main >> YellowRed
+	BorderColor<< Main >> YellowGreen
+
+	ArrowColor Olive
+	ActorBorderColor black
+	ActorFontName Courier
+
+	ActorBackgroundColor<< Human >> Gold
+}
+actor teachers
+actor students
+actor users
+
+users <|-- teachers
+users <|-- students
+
+package 用户用例 {
+users --up-> (登录)
+users --up-> (退出)
+users --up-> (查看用户信息)
+users --up-> (修改用户信息)
+users --up-> (修改密码)
+}
+package 学生用例 {
+students --left-> (查看学生个人信息)
+}
+package 公共用例 {
+students --down-> (查看学生列表)
+teachers --down-> (查看学生列表)
+}
+package 教师用例 {
+teachers ---> (评定学生成绩)
+teachers ---> (给出学生成绩评语)
+teachers ---> (发布实验)
+teachers ---> (选择课程)
+teachers ---> (选择上课时间)
+teachers ---> (查看个人信息)
+teachers ---> (修改个人信息)
+teachers ---> (选择学期)
+}
+@enduml

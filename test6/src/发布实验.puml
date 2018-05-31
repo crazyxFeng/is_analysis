@@ -1,0 +1,10 @@
+@startuml
+title 基于GitHub的实验管理平台--发布实验用例的顺序图
+hide footbox
+actor teachers
+
+teachers -> experiment :提交要发布的实验数据
+experiment -->teachers :返回成功或者失败
+
+
+@enduml

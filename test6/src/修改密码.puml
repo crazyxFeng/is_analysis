@@ -1,0 +1,10 @@
+@startuml
+title 基于GitHub的实验管理平台--修改密码用例的顺序图
+hide footbox
+actor students
+database users
+students -> users :提交修改的数据
+users -->students :返回成功或者失败
+
+
+@enduml
