@@ -27,23 +27,23 @@
 - ### [参见数据库设计](./数据库设计.md)
 
 ## 6. 用例及界面详细设计
-- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/修改个人信息.html)
--  ### [“发布实验”用例](./用例/发布实验.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/发布实验.html)
-- ### [“学生列表”用例](./用例/学生列表.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/主界面.html)
-- ### [“学生界面”用例](./用例/学生界面.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/学生界面.html)
-- ### [“教师界面”用例](./用例/教师界面.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/教师界面.html)
-- ### [“查看实验要求”用例](./用例/查看实验要求.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/查看实验-学生.html)
-- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/查看成绩.html)
+- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/修改个人信息.html)
+-  ### [“发布实验”用例](./用例/发布实验.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/发布实验.html)
+- ### [“学生列表”用例](./用例/学生列表.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/主界面.html)
+- ### [“学生界面”用例](./用例/学生界面.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/学生界面.html)
+- ### [“教师界面”用例](./用例/教师界面.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/教师界面.html)
+- ### [“查看实验要求”用例](./用例/查看实验要求.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/查看实验-学生.html)
+- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/查看成绩.html)
 
-- ### [“查看所有实验”用例](./用例/查看所有实验.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/全部实验.html)
-- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/查看用户信息.html)
-- ### [“登录”用例](./用例/登录.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/登录.html)
+- ### [“查看所有实验”用例](./用例/查看所有实验.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/全部实验.html)
+- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/查看用户信息.html)
+- ### [“登录”用例](./用例/登录.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/登录.html)
 
-- ### [“评定成绩”用例](./用例/评定成绩.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/评定成绩.html)
+- ### [“评定成绩”用例](./用例/评定成绩.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/评定成绩.html)
 
 
 
-- ### [“退出”用例](./用例/退出.md),[界面](https://github.com/crazyxFeng/is_analysis/test6/ui/退出.html)
+- ### [“退出”用例](./用例/退出.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/退出.html)
 
 
 
