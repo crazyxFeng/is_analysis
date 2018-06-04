@@ -33,13 +33,14 @@ students --left-> (查看学生个人信息)
 package 公共用例 {
 students --down-> (查看学生列表)
 teachers --down-> (查看学生列表)
+
 }
 package 教师用例 {
 teachers ---> (评定学生成绩)
 teachers ---> (给出学生成绩评语)
 teachers ---> (发布实验)
+teachers ---> (修改实验)
 teachers ---> (选择课程)
-teachers ---> (选择上课时间)
 teachers ---> (查看个人信息)
 teachers ---> (修改个人信息)
 teachers ---> (选择学期)
