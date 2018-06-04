@@ -8,8 +8,6 @@
 - 权限：
     教师：教师必须先登录之后才能发布实验    
     
-- API请求地址： 
-    接口基本地址/v1/api/getUserInfo/<user_id>
 
 - 请求方式 ：
     POST

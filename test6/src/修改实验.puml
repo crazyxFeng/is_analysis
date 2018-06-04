@@ -1,0 +1,10 @@
+@startuml
+title 基于GitHub的实验管理平台--修改实验用例的顺序图
+hide footbox
+actor teachers
+database experiment
+teachers -> experiment :到数据库获取当前实验信息
+experiment --> teachers :返回实验信息
+
+
+@enduml

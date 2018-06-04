@@ -9,8 +9,6 @@
     学生：只能查看自己的成绩，即接口参数student_id必须等于登录学生的student_id
     老师：可以查看所有学生的成绩。
     
-- API请求地址： 
-    接口基本地址/v1/api/getOneStudentResults/<student_id>
 
 - 请求方式 ：
     GET

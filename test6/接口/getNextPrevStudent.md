@@ -8,8 +8,6 @@
 - 权限：    
     老师：只有老师可以调用该API。
     
-- API请求地址： 
-    接口基本地址/v1/api/getNextPrevStudent/<is_next>/<student_id>
 
 - 请求方式 ：
     GET

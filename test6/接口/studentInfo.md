@@ -8,8 +8,6 @@
 - 权限：
     学生：必须先登录    
     
-- API请求地址： 
-    接口基本地址/v1/api/getUserInfo/<user_id>
 
 - 请求方式 ：
     GET
