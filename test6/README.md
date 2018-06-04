@@ -15,7 +15,7 @@
 ## 2. 系统总体结构
 ![](系统总体结构.png)
 
-界面设计参见：https://crazyxfeng.github.io/is_analysis/test6/ui/index.html
+界面设计参见：https://crazyxfeng.github.io/is_analysis/test6/ui/主界面.html
     
 ## 3. 用例图设计 [源码](src/usecase.puml)
 ![](usecase.png)
@@ -34,15 +34,10 @@
 - ### [“教师界面”用例](./用例/教师界面.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/教师界面.html)
 - ### [“查看实验要求”用例](./用例/查看实验要求.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/查看实验-学生.html)
 - ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/查看成绩.html)
-
 - ### [“查看所有实验”用例](./用例/查看所有实验.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/全部实验.html)
 - ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/查看用户信息.html)
 - ### [“登录”用例](./用例/登录.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/登录.html)
-
 - ### [“评定成绩”用例](./用例/评定成绩.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/评定成绩.html)
-
-
-
 - ### [“退出”用例](./用例/退出.md),[界面](https://crazyxfeng.github.io/is_analysis/test6/ui/退出.html)
 
 
